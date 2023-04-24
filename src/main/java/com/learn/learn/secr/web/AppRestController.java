@@ -20,6 +20,7 @@ public class AppRestController {
         return accountService.ListUser();
     }
 
+
     @GetMapping(path = "user/{id}")
     public List<AppRoles> findRoleByUS(@PathVariable("id") Long id){
         return accountService.findRoleByIdUsername(id);
